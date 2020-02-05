@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6B109E7C23E989200090E7E9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B109E7B23E989200090E7E9 /* main.cpp */; };
+		6B109E8723E98B4A0090E7E9 /* longest-palindromic-substring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B109E8623E98B4A0090E7E9 /* longest-palindromic-substring.cpp */; };
+		6B2B3C8423EA597D00FDF45F /* zigzag-conversion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B2B3C8323EA597D00FDF45F /* zigzag-conversion.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		6B109E7823E989200090E7E9 /* leetcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = leetcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B109E7B23E989200090E7E9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6B109E8523E98B4A0090E7E9 /* longest-palindromic-substring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "longest-palindromic-substring.h"; sourceTree = "<group>"; };
+		6B109E8623E98B4A0090E7E9 /* longest-palindromic-substring.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "longest-palindromic-substring.cpp"; sourceTree = "<group>"; };
+		6B2B3C8223EA597D00FDF45F /* zigzag-conversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "zigzag-conversion.h"; sourceTree = "<group>"; };
+		6B2B3C8323EA597D00FDF45F /* zigzag-conversion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "zigzag-conversion.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,21 @@
 		6B109E7A23E989200090E7E9 /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
+				6B109E8423E98B020090E7E9 /* solutions */,
 				6B109E7B23E989200090E7E9 /* main.cpp */,
 			);
 			path = leetcode;
+			sourceTree = "<group>";
+		};
+		6B109E8423E98B020090E7E9 /* solutions */ = {
+			isa = PBXGroup;
+			children = (
+				6B109E8523E98B4A0090E7E9 /* longest-palindromic-substring.h */,
+				6B109E8623E98B4A0090E7E9 /* longest-palindromic-substring.cpp */,
+				6B2B3C8223EA597D00FDF45F /* zigzag-conversion.h */,
+				6B2B3C8323EA597D00FDF45F /* zigzag-conversion.cpp */,
+			);
+			path = solutions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +138,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B109E7C23E989200090E7E9 /* main.cpp in Sources */,
+				6B109E8723E98B4A0090E7E9 /* longest-palindromic-substring.cpp in Sources */,
+				6B2B3C8423EA597D00FDF45F /* zigzag-conversion.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +259,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PRLP6W5S32;
+				DEPLOYMENT_LOCATION = YES;
+				DEVELOPMENT_TEAM = "";
+				DSTROOT = /;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -249,7 +271,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PRLP6W5S32;
+				DEPLOYMENT_LOCATION = YES;
+				DEVELOPMENT_TEAM = "";
+				DSTROOT = /;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
