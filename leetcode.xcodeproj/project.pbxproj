@@ -10,6 +10,7 @@
 		6B109E7C23E989200090E7E9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B109E7B23E989200090E7E9 /* main.cpp */; };
 		6B109E8723E98B4A0090E7E9 /* longest-palindromic-substring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B109E8623E98B4A0090E7E9 /* longest-palindromic-substring.cpp */; };
 		6B2B3C8423EA597D00FDF45F /* zigzag-conversion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B2B3C8323EA597D00FDF45F /* zigzag-conversion.cpp */; };
+		6B2B3C8723EAA18E00FDF45F /* bytedance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B2B3C8623EAA18E00FDF45F /* bytedance.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		6B109E8623E98B4A0090E7E9 /* longest-palindromic-substring.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "longest-palindromic-substring.cpp"; sourceTree = "<group>"; };
 		6B2B3C8223EA597D00FDF45F /* zigzag-conversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "zigzag-conversion.h"; sourceTree = "<group>"; };
 		6B2B3C8323EA597D00FDF45F /* zigzag-conversion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "zigzag-conversion.cpp"; sourceTree = "<group>"; };
+		6B2B3C8523EAA18E00FDF45F /* bytedance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bytedance.h; sourceTree = "<group>"; };
+		6B2B3C8623EAA18E00FDF45F /* bytedance.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bytedance.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,8 @@
 				6B109E8623E98B4A0090E7E9 /* longest-palindromic-substring.cpp */,
 				6B2B3C8223EA597D00FDF45F /* zigzag-conversion.h */,
 				6B2B3C8323EA597D00FDF45F /* zigzag-conversion.cpp */,
+				6B2B3C8523EAA18E00FDF45F /* bytedance.h */,
+				6B2B3C8623EAA18E00FDF45F /* bytedance.cpp */,
 			);
 			path = solutions;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B109E7C23E989200090E7E9 /* main.cpp in Sources */,
+				6B2B3C8723EAA18E00FDF45F /* bytedance.cpp in Sources */,
 				6B109E8723E98B4A0090E7E9 /* longest-palindromic-substring.cpp in Sources */,
 				6B2B3C8423EA597D00FDF45F /* zigzag-conversion.cpp in Sources */,
 			);

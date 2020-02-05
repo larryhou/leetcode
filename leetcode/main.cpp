@@ -9,11 +9,12 @@
 #include <iostream>
 #include "solutions/longest-palindromic-substring.h"
 #include "solutions/zigzag-conversion.h"
+#include "solutions/bytedance.h"
 
 void resolve(const char *v)
 {
 //    longest_palindromic_substring::resolve(v);
-    zigzag_conversion::resolve(v);
+//    zigzag_conversion::resolve(v);
 }
 
 int main(int argc, const char * argv[])
@@ -34,6 +35,8 @@ int main(int argc, const char * argv[])
             resolve(pipe.c_str());
         }
     }
+    
+    bytedance::resolve(argc, argv);
     
     return 0;
 }
