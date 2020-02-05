@@ -12,7 +12,7 @@
 
 void resolve(const char *v)
 {
-    longest_palindromic_substring::resolve(v);
+//    longest_palindromic_substring::resolve(v);
     zigzag_conversion::resolve(v);
 }
 
@@ -22,6 +22,7 @@ int main(int argc, const char * argv[])
     {
         for (auto i = 1; i < argc; i++)
         {
+            printf("# %s\n", argv[i]);
             resolve(argv[i]);
         }
     }
