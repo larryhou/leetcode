@@ -6,6 +6,19 @@
 //  Copyright © 2020 larryhou. All rights reserved.
 //
 
+/**
+ 给定三个字符串a, b, c, 判断c是否可以通过字符串a, b的子串按顺序交错组成.
+ 例如:
+ a: "btdne" b: "yeac" c: "bytedance"
+ 返回: True
+ a: "bytece" b: "dan" c: "bytedance"
+ 返回: True
+ a: "bytec" b: "dan" c: "bytedance"
+ 返回: False
+ a: "byte" b: "danced" c: "bytedance"
+ 返回: False
+ */
+
 #ifndef bytedance_h
 #define bytedance_h
 
