@@ -17,6 +17,7 @@ void bytedance::resolve(int argc, const char * argv[])
     std::cout << "[2]" << (resolve_2(argv[1], argv[2], argv[3]) ? "True" : "False") << std::endl;
 }
 
+// 理解1：a/b字符串顺序无关，通过自由排列可以组成c字符串
 bool bytedance::resolve_1(std::string a, std::string b, std::string v)
 {
     if (a.size() + b.size() != v.size()) {return false;}
@@ -39,6 +40,7 @@ bool bytedance::resolve_1(std::string a, std::string b, std::string v)
     return true;
 }
 
+// 理解2：a/b字符串顺序不能改变，只能交错插入组成c字符串
 bool bytedance::resolve_2(std::string a, std::string b, std::string v)
 {
     if (a.size() + b.size() != v.size()) {return false;}
