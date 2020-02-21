@@ -26,7 +26,8 @@
 #include <string>
 namespace bytedance {
 void resolve(int argc, const char * argv[]);
-bool resolve(std::string a, std::string b, std::string v);
+bool resolve_1(std::string a, std::string b, std::string v);
+bool resolve_2(std::string a, std::string b, std::string v);
 }
 
 #endif /* bytedance_h */

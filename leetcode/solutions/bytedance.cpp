@@ -13,10 +13,11 @@
 void bytedance::resolve(int argc, const char * argv[])
 {
     if (argc < 4) {return;}
-    std::cout << (resolve(argv[1], argv[2], argv[3]) ? "True" : "False") << std::endl;
+    std::cout << "[1]" << (resolve_1(argv[1], argv[2], argv[3]) ? "True" : "False") << std::endl;
+    std::cout << "[2]" << (resolve_2(argv[1], argv[2], argv[3]) ? "True" : "False") << std::endl;
 }
 
-bool bytedance::resolve(std::string a, std::string b, std::string v)
+bool bytedance::resolve_1(std::string a, std::string b, std::string v)
 {
     if (a.size() + b.size() != v.size()) {return false;}
     std::vector<char> concat(a.begin(), a.end());
@@ -35,5 +36,29 @@ bool bytedance::resolve(std::string a, std::string b, std::string v)
     {
         if (*i != *t++) {return false;}
     }
+    return true;
+}
+
+bool bytedance::resolve_2(std::string a, std::string b, std::string v)
+{
+    if (a.size() + b.size() != v.size()) {return false;}
+    auto x = a.begin();
+    auto y = b.begin();
+    
+    auto cursor = v.begin();
+    while (cursor != v.end())
+    {
+        if (*x != *cursor)
+        {
+            if (*y != *cursor) {return false;}
+            ++y;
+        }
+        else
+        {
+            ++x;
+        }
+        ++cursor;
+    }
+    
     return true;
 }
